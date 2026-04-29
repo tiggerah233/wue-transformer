@@ -1,22 +1,68 @@
 # WUE Prediction with Transformer
 
-This project focuses on predicting Water Use Efficiency (WUE)
-using remote sensing and meteorological data.
+## Overview
+This project aims to model and predict Water Use Efficiency (WUE)
+using multi-source remote sensing and meteorological data.
+
+The workflow integrates data extraction from Google Earth Engine (GEE)
+with deep learning models (Transformer) for time-series prediction.
+
+This project is part of ongoing research in hydrology and AI-driven environmental modeling.
+
+---
 
 ## Data Source
-- Google Earth Engine (GEE)
-- Climate and vegetation datasets (e.g. NDVI, temperature, precipitation)
+- Remote sensing data from Google Earth Engine (GEE)
+- Meteorological variables:
+  - Precipitation
+  - Temperature
+  - Vegetation indices (e.g., NDVI)
+  - Evapotranspiration
 
-## Method
-- Time-series modeling using Transformer
-- Data preprocessing and feature engineering
+---
+
+## Methodology
+- Time-series dataset construction from multi-source data
+- Data preprocessing:
+  - Temporal alignment
+  - Missing value handling
+  - Feature engineering
+- Model:
+  - Transformer-based architecture for sequence modeling
+- Training:
+  - Supervised learning for WUE regression
+
+---
+
+## Project Structure
+├── main.py        # training & evaluation pipeline
+├── config.py      # configuration and hyperparameters
+---
 
 ## Current Progress
-- Dataset construction from GEE ✅
-- Baseline Transformer model implemented ✅
-- Model optimization in progress 🚧
+- [x] Data collection and preprocessing pipeline (GEE)
+- [x] Baseline Transformer model implementation
+- [x] Initial training and validation
+- [ ] Model optimization and tuning (ongoing)
+- [ ] Experiment tracking and evaluation improvements
+
+---
 
 ## Future Work
-- Improve model performance
-- Build API / web tool for practical usage
-This project is part of ongoing research in hydrology and AI modeling.
+- Improve model performance with advanced architectures
+- Incorporate more environmental variables
+- Automate feature selection and hyperparameter tuning
+- Develop API / web-based tool for real-world applications
+- Explore AI-assisted research workflows (LLM-based analysis & reporting)
+
+---
+
+## Tech Stack
+- Python
+- PyTorch
+- Google Earth Engine (GEE)
+
+---
+
+## Notes
+This repository is under active development.
