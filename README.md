@@ -19,3 +19,4 @@ using remote sensing and meteorological data.
 ## Future Work
 - Improve model performance
 - Build API / web tool for practical usage
+This project is part of ongoing research in hydrology and AI modeling.
