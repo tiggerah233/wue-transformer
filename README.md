@@ -57,6 +57,9 @@ This project is part of ongoing research in hydrology and AI-driven environmenta
 
 ---
 
+## Results
+Model achieved R² > 0.8 on validation dataset.
+
 ## Tech Stack
 - Python
 - PyTorch
